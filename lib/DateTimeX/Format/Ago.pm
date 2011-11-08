@@ -32,7 +32,7 @@ BEGIN {
 		years     => ["vor %d Jahren", "vor einem Jahr"],
 		months    => ["vor %d Monaten", "vor einem Monat"],
 		weeks     => ["vor %d Wochen", "vor einer Woche"],
-		days      => ["vor %d Tagen", "vor einer Tag"],
+		days      => ["vor %d Tagen", "vor einem Tag"],
 		hours     => ["vor %d Stunden", "vor einer Stunde"],
 		minutes   => ["vor %d Minuten", "vor einer Minute"],
 		};
