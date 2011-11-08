@@ -36,18 +36,18 @@ BEGIN {
 		hours     => ["vor %d Stunden", "vor einer Stunde"],
 		minutes   => ["vor %d Minuten", "vor einer Minute"],
 		};
-	
-	# These courtesy of Google Translate...
 	$__{FR} = {
 		future    => "à l'avenir",
-		recent    => "viens",
-		years     => ["il ya %d ans", "il ya un an"],
-		months    => ["il ya %d mois", "il ya un mois"],
-		weeks     => ["il ya %d semaines", "il ya une semaine"],
-		days      => ["il ya %d jours", "il ya un jour"],
-		hours     => ["il ya %d heures", "il ya une heure"],
-		minutes   => ["il ya %d minutes", "il ya une minute"],
+		recent    => "récemment",
+		years     => ["il y a %d ans", "il y a un an"],
+		months    => ["il y a %d mois", "il y a un mois"],
+		weeks     => ["il y a %d semaines", "il y a une semaine"],
+		days      => ["il y a %d jours", "il y a un jour"],
+		hours     => ["il y a %d heures", "il y a une heure"],
+		minutes   => ["il y a %d minutes", "il y a une minute"],
 		};
+	
+	# These courtesy of Google Translate...
 	$__{ES} = {
 		future    => "en el futuro",
 		recent    => "ahora mismo",
