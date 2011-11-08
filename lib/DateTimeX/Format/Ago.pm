@@ -27,8 +27,8 @@ BEGIN {
 		minutes   => ["%d minutes ago", "a minute ago"],
 		};
 	$__{DE} = {
-		future    => "in die Zukunft",
-		recent    => "vorhin",
+		future    => "in der Zukunft",
+		recent    => "gerade jetzt",
 		years     => ["vor %d Jahren", "vor einem Jahr"],
 		months    => ["vor %d Monaten", "vor einem Monat"],
 		weeks     => ["vor %d Wochen", "vor einer Woche"],
@@ -149,8 +149,6 @@ L<http://rt.cpan.org/Dist/Display.html?Queue=DateTimeX-Format-Ago>.
 
 I'm actively seeking translations - only have English and German so far.
 Feel free to attach patches for other languages as bug reports.
-
-German translations are probably dodgy, as I am not a native speaker.
 
 =head1 SEE ALSO
 
