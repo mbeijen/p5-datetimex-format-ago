@@ -157,7 +157,11 @@ DateTimeX::Format::Ago - I should have written this module "3 years ago"
 =head1 DESCRIPTION
 
 Ever wished DateTime::Format::Natural had a C<format_datetime>
-method?
+method? This module provides human-friendly datetime formatting,
+outputting strings like "3 days ago".
+
+Primary use case: websites that show a list of a person's recent
+activities.
 
 =head2 Constructor
 
@@ -168,7 +172,7 @@ method?
 Creates a formatter object for the given language (a BCP47 language code).
 If the language is omitted, extracts it from C<< $ENV{LANG} >>.
 
-Decent English ('en') and German ('de') support is provided. French ('fr'),
+Decent English ('en'), German ('de') and French ('fr') support is provided.
 Portuguese ('pt') and Castillian Spanish ('es') are also provided, but some
 of the strings were translated with Google Translate, so they might not be
 perfect.
