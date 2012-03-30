@@ -93,12 +93,21 @@ sub parse_datetime
 	Carp::croak(sprintf("%s doesn't do parsing", __PACKAGE__));
 }
 
+sub _now
+{
+	if ($INC{'Time/HiRes.pm'})
+	{
+		return DateTime->from_epoch(epoch => Time::HiRes::time());
+	}
+	return DateTime->now;
+}
+
 sub format_datetime
 {
 	my ($self, $datetime) = @_;
 	$self = $self->new unless blessed($self);
 	
-	my $now     = DateTime->now;
+	my $now     = $self->_now;
 	my $delta   = $now - $datetime;
 	my %strings = $self->_strings;
 	
