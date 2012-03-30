@@ -10,9 +10,10 @@
 	a               :Project ;
 	:programming-language "Perl" ;
 	:name           "DateTimeX-Format-Ago" ;
-	:shortdesc      "I should have written this module \"3 years ago\"" ;
+	:shortdesc      "I should have written this module \"3 years ago\"!" ;
 	:homepage       <https://metacpan.org/release/DateTimeX-Format-Ago> ;
 	:download-page  <https://metacpan.org/release/DateTimeX-Format-Ago> ;
+	:repository     [ a :HgRepository ; :browse <https://bitbucket.org/tobyink/p5-datetimex-format-ago> ] ;
 	:bug-database   <http://rt.cpan.org/Dist/Display.html?Queue=DateTimeX-Format-Ago> ;
 	:created        "2011-11-08"^^xsd:date ;
 	:license        <http://dev.perl.org/licenses/> ;

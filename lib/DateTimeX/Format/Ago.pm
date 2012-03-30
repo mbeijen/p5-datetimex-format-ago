@@ -6,7 +6,7 @@ use utf8;
 
 BEGIN {
 	$DateTimeX::Format::Ago::AUTHORITY = 'cpan:TOBYINK';
-	$DateTimeX::Format::Ago::VERSION   = '0.001';
+	$DateTimeX::Format::Ago::VERSION   = '0.002';
 }
 
 use Carp 0 qw[];
@@ -218,13 +218,15 @@ past, then use L<Time::HiRes>.
 That's all you need to do. Merely loading it will give DateTimeX::Format::Ago
 an indication that you want it to use a more accurate idea of "now".
 
+=head2 Translations
+
+This module only supports a handful of languages. I'm seeking translations.
+Feel free to attach patches for other languages as bug reports.
+
 =head2 Reporting Bugs
 
 Please report any bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=DateTimeX-Format-Ago>.
-
-I'm actively seeking translations. Feel free to attach patches for other
-languages as bug reports.
 
 =head1 SEE ALSO
 
@@ -238,7 +240,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2011 by Toby Inkster.
+This software is copyright (c) 2011-2012 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
