@@ -67,6 +67,16 @@ BEGIN {
 		hours     => ["%d horas atrás", "há uma hora"],
 		minutes   => ["%d minutos atrás", "há um minuto"],
 		};
+    $__{KR} = {
+        future    => "잠시 후",
+        recent    => "방금 전",
+        years     => ["%d년 전", "작년"],
+        months    => ["%d개월 전", "지난달"],
+        weeks     => ["%d주 전", "지난주"],
+        days      => ["%d일 전", "어제"],
+        hours     => ["%d시간 전", "1시간 전"],
+        minutes   => ["%d분 전", "1분 전"]
+        };
 
 	# ISO 639-2
 	$__{ENG} = $__{EN};
@@ -77,6 +87,7 @@ BEGIN {
 	$__{DEU} = $__{DE};
 	$__{SPA} = $__{ES};
 	$__{POR} = $__{PT};
+    $__{KOR} = $__{KR};
 }
 
 sub new
