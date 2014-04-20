@@ -163,6 +163,10 @@ sub _strings
 __PACKAGE__
 __END__
 
+=pod
+
+=encoding utf-8
+
 =head1 NAME
 
 DateTimeX::Format::Ago - I should have written this module "3 years ago"
