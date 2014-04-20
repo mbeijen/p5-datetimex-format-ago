@@ -7,7 +7,7 @@ package DateTimeX::Format::Ago;
 
 BEGIN {
 	$DateTimeX::Format::Ago::AUTHORITY = 'cpan:TOBYINK';
-	$DateTimeX::Format::Ago::VERSION   = '0.002';
+	$DateTimeX::Format::Ago::VERSION   = '0.003';
 }
 
 use Carp qw();
@@ -256,7 +256,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2011-2012 by Toby Inkster.
+This software is copyright (c) 2011-2012, 2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

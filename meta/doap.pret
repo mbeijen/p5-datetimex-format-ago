@@ -22,3 +22,5 @@
 	dc:title        "the same terms as the perl 5 programming language system itself" .
 
 cpan:TOBYINK foaf:name "Toby Inkster" .
+
+cpan:JEEN foaf:name "JEEN Lee" .

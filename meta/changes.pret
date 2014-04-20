@@ -20,3 +20,15 @@
 			]
 		]
 	].
+
+`DateTimeX-Format-Ago 0.003 cpan:TOBYINK`
+	issued       2014-04-20;
+	changeset [
+		item "use Dist::Inkt"^^Packaging;
+		item "Eliminate dependency on common::sense."^^Change;
+		item [
+			a dcs:Addition;
+			label "Korean translation.";
+			dcs:blame cpan:JEEN;
+		];
+	].
