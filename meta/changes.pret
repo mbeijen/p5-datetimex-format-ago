@@ -1,0 +1,22 @@
+# This file acts as the project's changelog.
+
+`DateTimeX-Format-Ago 0.001 cpan:TOBYINK`
+	issued       2011-11-08;
+	label        "Initial release".
+
+`DateTimeX-Format-Ago 0.002 cpan:TOBYINK`
+	issued       2012-03-30;
+	changeset [
+		item [
+			a dcs:Bugfix;
+			label "Improved support for high resolution, very recent datetimes."@en;
+			dcs:fixes [
+				label "High resolution datetimes in the very recent past, formatted as 'in the future'.";
+				dbug:reporter [
+					a foaf:Person ;
+					foaf:name "Robert Krimen";
+					foaf:mbox_sha1sum "67c235f46e56e47beb9fa9e51a51b6d97b8d347e"
+				]
+			]
+		]
+	].

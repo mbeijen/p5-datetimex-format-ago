@@ -6,19 +6,19 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://purl.org/NET/cpan-uri/dist/DateTimeX-Format-Ago/project>
-	a               :Project ;
-	:programming-language "Perl" ;
+`DateTimeX-Format-Ago`
 	:name           "DateTimeX-Format-Ago" ;
 	:shortdesc      "I should have written this module \"3 years ago\"!" ;
 	:homepage       <https://metacpan.org/release/DateTimeX-Format-Ago> ;
 	:download-page  <https://metacpan.org/release/DateTimeX-Format-Ago> ;
 	:repository     [ a :GitRepository ; :browse <https://github.com/tobyink/p5-datetimex-format-ago> ] ;
 	:bug-database   <http://rt.cpan.org/Dist/Display.html?Queue=DateTimeX-Format-Ago> ;
-	:created        "2011-11-08"^^xsd:date ;
+	:created        2011-11-08;
 	:license        <http://dev.perl.org/licenses/> ;
-	:developer      [ a foaf:Person ; foaf:name "Toby Inkster" ; foaf:mbox <mailto:tobyink@cpan.org> ] .
+	:developer      cpan:TOBYINK;
+	:maintainer     cpan:TOBYINK.
 
 <http://dev.perl.org/licenses/>
 	dc:title        "the same terms as the perl 5 programming language system itself" .
 
+cpan:TOBYINK foaf:name "Toby Inkster" .
