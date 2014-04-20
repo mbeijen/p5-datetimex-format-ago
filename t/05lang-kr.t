@@ -6,7 +6,7 @@ use Test::More tests => 200;
 # Some of these tests rely on computation being carried out reasonably fast.
 # I can only see them failing on really slow and overloaded CPUs though.
 
-my $ago = DateTimeX::Format::Ago->new(language => 'KR');
+my $ago = DateTimeX::Format::Ago->new(language => 'KO');
 
 foreach my $unit (qw/years months weeks days hours minutes/)
 {
