@@ -1,17 +1,18 @@
-package DateTimeX::Format::Ago;
-
 use 5.010;
-use common::sense;
+use strict;
+use warnings;
 use utf8;
+
+package DateTimeX::Format::Ago;
 
 BEGIN {
 	$DateTimeX::Format::Ago::AUTHORITY = 'cpan:TOBYINK';
 	$DateTimeX::Format::Ago::VERSION   = '0.002';
 }
 
-use Carp 0 qw[];
-use DateTime 0 ;
-use Scalar::Util 0 qw[blessed];
+use Carp qw();
+use DateTime;
+use Scalar::Util qw(blessed);
 
 our %__;
 BEGIN {
@@ -107,9 +108,9 @@ sub _now
 {
 	if ($INC{'Time/HiRes.pm'})
 	{
-		return DateTime->from_epoch(epoch => Time::HiRes::time());
+		return 'DateTime'->from_epoch(epoch => Time::HiRes::time());
 	}
-	return DateTime->now;
+	return 'DateTime'->now;
 }
 
 sub format_datetime

@@ -4,5 +4,5 @@
 
 `DateTimeX-Format-Ago`
 	:test-requirement    [ :on "Test::More 0.96"^^:CpanId ];
-	:runtime-requirement [ :on "common::sense"^^:CpanId ];
+	:runtime-requirement [ :on "perl 5.010"^^:CpanId ];
 	:runtime-requirement [ :on "DateTime"^^:CpanId ].
