@@ -32,3 +32,13 @@
 			dcs:blame cpan:JEEN;
 		];
 	].
+
+`DateTimeX-Format-Ago 0.004 cpan:TOBYINK`
+	issued       2014-04-21;
+	changeset [
+		item [
+			a dcs:Addition;
+			label "Indonesian translation.";
+			dcs:blame cpan:SHARYANTO;
+		];
+	].
