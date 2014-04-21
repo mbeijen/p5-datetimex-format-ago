@@ -16,7 +16,7 @@ use Scalar::Util qw(blessed);
 
 our %__;
 BEGIN {
-	$__{EN} = {
+	$__{ENG} = $__{EN} = {
 		future    => "in the future",
 		recent    => "just now",
 		years     => ["%d years ago", "a year ago"],
@@ -26,7 +26,7 @@ BEGIN {
 		hours     => ["%d hours ago", "an hour ago"],
 		minutes   => ["%d minutes ago", "a minute ago"],
 	};
-	$__{DE} = {
+	$__{GER} = $__{DEU} = $__{DE} = {
 		future    => "in der Zukunft",
 		recent    => "gerade jetzt",
 		years     => ["vor %d Jahren", "vor einem Jahr"],
@@ -36,7 +36,7 @@ BEGIN {
 		hours     => ["vor %d Stunden", "vor einer Stunde"],
 		minutes   => ["vor %d Minuten", "vor einer Minute"],
 	};
-	$__{FR} = {
+	$__{FRE} = $__{FRA} = $__{FR} = {
 		future    => "à l'avenir",
 		recent    => "récemment",
 		years     => ["il y a %d ans", "il y a un an"],
@@ -46,7 +46,7 @@ BEGIN {
 		hours     => ["il y a %d heures", "il y a une heure"],
 		minutes   => ["il y a %d minutes", "il y a une minute"],
 	};
-	$__{KO} = {
+	$__{KOR} = $__{KO} = {
 		future    => "잠시 후", 
 		recent    => "방금 전",
 		years     => ["%d년 전", "작년"],
@@ -56,9 +56,7 @@ BEGIN {
 		hours     => ["%d시간 전", "1시간 전"],
 		minutes   => ["%d분 전", "1분 전"]
 	}; #"# fix for Scite syntax highlighter
-	
-	# These courtesy of Google Translate...
-	$__{ES} = {
+	$__{SPA} = $__{ES} = {
 		future    => "en el futuro",
 		recent    => "ahora mismo",
 		years     => ["hace %d años", "hace un año"],
@@ -68,7 +66,7 @@ BEGIN {
 		hours     => ["hace %d horas", "hace una hora"],
 		minutes   => ["hace %d minutos", "hace un minuto"],
 	};
-	$__{PT} = {
+	$__{POR} = $__{PT} = {
 		future    => "no futuro",
 		recent    => "só agora",
 		years     => ["%d anos atrás", "há um ano"],
@@ -78,8 +76,7 @@ BEGIN {
 		hours     => ["%d horas atrás", "há uma hora"],
 		minutes   => ["%d minutos atrás", "há um minuto"],
 	};
-
-	$__{ID} = {
+	$__{IND} = $__{ID} = {
 		future    => "yang akan datang",
 		recent    => "baru saja",
 		years     => ["%d tahun yang lalu", "setahun yang lalu"],
@@ -89,18 +86,6 @@ BEGIN {
 		hours     => ["%d jam yang lalu", "sejam yang lalu"],
 		minutes   => ["%d menit yang lalu", "semenit yang lalu"],
 	};
-
-	# ISO 639-2
-	$__{ENG} = $__{EN};
-	$__{FRE} = $__{FR};
-	$__{FRA} = $__{FR};
-	$__{ENG} = $__{EN};
-	$__{GER} = $__{DE};
-	$__{DEU} = $__{DE};
-	$__{SPA} = $__{ES};
-	$__{POR} = $__{PT};
-	$__{KOR} = $__{KO};
-	$__{IND} = $__{ID};
 }
 
 sub new
@@ -207,10 +192,10 @@ activities.
 Creates a formatter object for the given language (a BCP47 language code).
 If the language is omitted, extracts it from C<< $ENV{LANG} >>.
 
-Decent English ('en'), German ('de'), French ('fr'), and Korean ('ko')
-support is provided. Portuguese ('pt') and Castillian Spanish ('es') are
-also provided, but some of the strings were translated with Google
-Translate, so they might not be perfect.
+Decent English ('en'), German ('de'), French ('fr'), Korean ('ko'), and
+Indonesian ('id') support is provided. Portuguese ('pt') and Castillian
+Spanish ('es') are also provided, but some of the strings were
+translated with Google Translate, so they might not be perfect.
 
 =back
 
