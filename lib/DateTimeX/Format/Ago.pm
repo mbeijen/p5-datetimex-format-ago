@@ -79,6 +79,17 @@ BEGIN {
 		minutes   => ["%d minutos atrás", "há um minuto"],
 	};
 
+	$__{ID} = {
+		future    => "yang akan datang",
+		recent    => "baru saja",
+		years     => ["%d tahun yang lalu", "setahun yang lalu"],
+		months    => ["%d bulan yang lalu", "sebulan yang lalu"],
+		weeks     => ["%dw minggu yang lalu", "seminggu yang lalu"],
+		days      => ["%d hari yang lalu", "sehari yang lalu"],
+		hours     => ["%d jam yang lalu", "sejam yang lalu"],
+		minutes   => ["%d menit yang lalu", "semenit yang lalu"],
+	};
+
 	# ISO 639-2
 	$__{ENG} = $__{EN};
 	$__{FRE} = $__{FR};
@@ -89,6 +100,7 @@ BEGIN {
 	$__{SPA} = $__{ES};
 	$__{POR} = $__{PT};
 	$__{KOR} = $__{KO};
+	$__{IND} = $__{ID};
 }
 
 sub new
