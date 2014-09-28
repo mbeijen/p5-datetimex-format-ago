@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 use Test::More;
 use DateTimeX::Format::Ago;
 
@@ -11,4 +13,4 @@ my $now = DateTime->from_epoch(epoch => scalar Time::HiRes::time());
 unlike(
 	DateTimeX::Format::Ago->new(language => 'en')->format_datetime($now),
 	qr{future}i,
-	);
+);

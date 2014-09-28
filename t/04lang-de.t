@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 use DateTimeX::Format::Ago;
 use Test::More tests => 200;
 

@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 use utf8;
 use DateTimeX::Format::Ago;
 use Test::More tests => 200;
