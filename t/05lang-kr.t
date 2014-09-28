@@ -14,11 +14,11 @@ foreach my $unit (qw/years months weeks days hours minutes/)
 		years   => 25,
 		months  => 11,
 		weeks   => 3,  # don't want to fail tests in February 2013.
-		days    => 6,  
+		days    => 6,
 		hours   => 22, # don't want to fail due to daylight savings.
 		minutes => 59,
-		}->{$unit};
-
+	}->{$unit};
+	
 	my $when = DateTime->now->subtract($unit => 1);
 	is($ago->format_datetime($when), {
 		'years'    => '작년',
@@ -27,7 +27,8 @@ foreach my $unit (qw/years months weeks days hours minutes/)
 		'days'     => '어제',
 		'hours'    => '1시간 전',
 		'minutes'  => '1분 전',
-		}->{$unit});
+	}->{$unit});
+	
 	my $deunit = {
 		years    => '년 전',
 		months   => '개월 전',
@@ -35,7 +36,8 @@ foreach my $unit (qw/years months weeks days hours minutes/)
 		days     => '일 전',
 		hours    => '시간 전',
 		minutes  => '분 전',
-		}->{$unit};
+	}->{$unit};
+	
 	for my $n (2..$max)
 	{
 		my $when = DateTime->now->subtract($unit => $n);
