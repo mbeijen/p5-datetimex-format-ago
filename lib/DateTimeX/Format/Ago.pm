@@ -47,7 +47,7 @@ BEGIN {
 		minutes   => ["il y a %d minutes", "il y a une minute"],
 	};
 	$__{KOR} = $__{KO} = {
-		future    => "잠시 후", 
+		future    => "잠시 후",
 		recent    => "방금 전",
 		years     => ["%d년 전", "작년"],
 		months    => ["%d개월 전", "지난달"],
