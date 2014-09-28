@@ -42,3 +42,14 @@
 			dcs:blame cpan:SHARYANTO;
 		];
 	].
+
+`DateTimeX-Format-Ago 0.005 cpan:TOBYINK`
+	issued       2014-09-28;
+	changeset [
+		item [
+			a dcs:Change;
+			label "Improvements for the Portuguese translation.";
+			dcs:blame cpan:EITZ;
+			dcs:fixes RT#99165;
+		];
+	].

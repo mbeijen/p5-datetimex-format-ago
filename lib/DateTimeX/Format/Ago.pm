@@ -7,7 +7,7 @@ package DateTimeX::Format::Ago;
 
 BEGIN {
 	$DateTimeX::Format::Ago::AUTHORITY = 'cpan:TOBYINK';
-	$DateTimeX::Format::Ago::VERSION   = '0.004';
+	$DateTimeX::Format::Ago::VERSION   = '0.005';
 }
 
 use Carp qw();
