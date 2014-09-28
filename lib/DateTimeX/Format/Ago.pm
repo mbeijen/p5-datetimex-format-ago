@@ -68,11 +68,11 @@ BEGIN {
 	};
 	$__{POR} = $__{PT} = {
 		future    => "no futuro",
-		recent    => "só agora",
+		recent    => "agora",
 		years     => ["%d anos atrás", "há um ano"],
 		months    => ["%d meses atrás", "há um mês"],
 		weeks     => ["%d semanas atrás", "há uma semana"],
-		days      => ["%d days atrás", "há um dia"],
+		days      => ["%d dias atrás", "há um dia"],
 		hours     => ["%d horas atrás", "há uma hora"],
 		minutes   => ["%d minutos atrás", "há um minuto"],
 	};
@@ -192,10 +192,10 @@ activities.
 Creates a formatter object for the given language (a BCP47 language code).
 If the language is omitted, extracts it from C<< $ENV{LANG} >>.
 
-Decent English ('en'), German ('de'), French ('fr'), Korean ('ko'), and
-Indonesian ('id') support is provided. Portuguese ('pt') and Castillian
-Spanish ('es') are also provided, but some of the strings were
-translated with Google Translate, so they might not be perfect.
+Decent English ('en'), German ('de'), French ('fr'), Portuguese ('pt'),
+Korean ('ko'), and Indonesian ('id') support is provided. Castillian
+Spanish ('es') is also provided, but some of the strings were translated
+with Google Translate, so they might not be perfect.
 
 =back
 
