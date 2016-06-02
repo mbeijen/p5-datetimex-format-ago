@@ -26,6 +26,16 @@ BEGIN {
 		hours     => ["%d hours ago", "an hour ago"],
 		minutes   => ["%d minutes ago", "a minute ago"],
 	};
+	$__{DUT} = $__{NL} = {
+		future    => "in de toekomst",
+		recent    => "nu",
+		years     => ["%d jaar geleden", "een jaar geleden"],
+		months    => ["%d maanden geleden", "een maand geleden"],
+		weeks     => ["%d weken geleden", "een week geleden"],
+		days      => ["%d dagen geleden", "een dag geleden"],
+		hours     => ["%d uur geleden", "een uur geleden"],
+		minutes   => ["%d minuten geleden", "een minuut geleden"],
+	};
 	$__{GER} = $__{DEU} = $__{DE} = {
 		future    => "in der Zukunft",
 		recent    => "gerade jetzt",
@@ -193,9 +203,9 @@ Creates a formatter object for the given language (a BCP47 language code).
 If the language is omitted, extracts it from C<< $ENV{LANG} >>.
 
 Decent English ('en'), German ('de'), French ('fr'), Portuguese ('pt'),
-Korean ('ko'), and Indonesian ('id') support is provided. Castillian
-Spanish ('es') is also provided, but some of the strings were translated
-with Google Translate, so they might not be perfect.
+Korean ('ko'), Indonesian ('id'), and Dutch ('nl') support is provided.
+Castillian Spanish ('es') is also provided, but some of the strings were
+translated with Google Translate, so they might not be perfect.
 
 =back
 
